@@ -13,13 +13,12 @@
 
 
 
-// This is very dirty and should not be used
-// I've found a more reliable vuln that I'll be exploiting soon
+// I have a bunch more ways of detecting it in case this method ever gets blocked
 (function(window) {
     var windowKeysDefault = Object.keys(window);
     var suspects = {};
 
-    var pivot = 'Ly93d3cuZ29vZ2xlLmNvbS9hZHNlbnNlL3N0YXJ0L2ltYWdlcy9mYXZpY29uLmljbw=='
+    var pivot = 'Ly93d3cuZ29vZ2xlLmNvbS9hZHNlbnNlL3N0YXJ0L2ltYWdlcy9mYXZpY29uLmljbw==';
 
     window.getSuspects = function() { return suspects;}
 
