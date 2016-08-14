@@ -16,11 +16,8 @@
 // I have a bunch more ways of detecting it in case this method ever gets blocked
 (function(window) {
     var windowKeysDefault = Object.keys(window);
-    var suspects = {};
 
     var pivot = 'Ly93d3cuZ29vZ2xlLmNvbS9hZHNlbnNlL3N0YXJ0L2ltYWdlcy9mYXZpY29uLmljbw==';
-
-    window.getSuspects = function() { return suspects;}
 
     document.addEventListener('DOMContentLoaded', function() {
         var windowKeysSuspect = Object.keys(window)
