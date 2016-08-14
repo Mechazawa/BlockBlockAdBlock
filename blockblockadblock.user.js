@@ -1,10 +1,14 @@
 // ==UserScript==
 // @name        blockblockadblock
+// @description Blocks BlockAdBlock.js from running
 // @namespace   Mechazawa
+// @author      Mechazawa
 // @include     *
-// @version     1
-// @grant       none
+// @version     2
+// @license     Unlicense
+// @updateURL   https://github.com/Mechazawa/BlockBlockAdBlock/raw/master/blockblockadblock.user.js
 // @run-at      document-start
+// @grant       none
 // ==/UserScript==
 
 
@@ -14,6 +18,8 @@
 (function(window) {
     var windowKeysDefault = Object.keys(window);
     var suspects = {};
+
+    var pivot = 'Ly93d3cuZ29vZ2xlLmNvbS9hZHNlbnNlL3N0YXJ0L2ltYWdlcy9mYXZpY29uLmljbw=='
 
     window.getSuspects = function() { return suspects;}
 
@@ -31,7 +37,9 @@
             suspects[suspectName] = suspect;
 
             for(var ii in suspectKeys) {
-                found = suspect[suspectKeys[ii]].toSource().indexOf('aW5zLmFkc2J5Z29vZ2xl') !== -1;
+                var source = suspect[suspectKeys[ii]].toSource();
+
+                found = source.indexOf(pivot) !== -1;
                 if(found) break;
             }
 
