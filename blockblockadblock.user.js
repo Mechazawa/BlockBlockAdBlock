@@ -37,7 +37,9 @@
             suspects[suspectName] = suspect;
 
             for(var ii in suspectKeys) {
-                var source = suspect[suspectKeys[ii]].toSource();
+                if(suspect[suspectKeys[ii]].toSource) {
+                    var source = suspect[suspectKeys[ii]].toSource();
+                }
 
                 found = source.indexOf(pivot) !== -1;
                 if(found) break;
