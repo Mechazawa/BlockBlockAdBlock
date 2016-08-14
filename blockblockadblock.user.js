@@ -1,8 +1,7 @@
 // ==UserScript==
 // @name        blockblockadblock
 // @namespace   Mechazawa
-// @include     https://blockadblock.com/*
-// @include     https://mindgamer.com/*
+// @include     *
 // @version     1
 // @grant       none
 // @run-at      document-start
