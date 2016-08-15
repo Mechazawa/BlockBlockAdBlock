@@ -7,8 +7,9 @@ This simple userscript will block BlockBlockAdBlock from running. Just install i
 
 Also check out [FuckFuckAdBlock][FuckFuckAdBlock].
 
-## Currently does not work in webkit browsers (chrome, safari) 
-This is due to the fact that the `.toSource()` method in those browsers is terrible and they should be ashamed. 
+## Unreliable in chrome and safari
+This is due to the fact that the `.toSource()` method in those browsers is terrible and they should be ashamed. Instead
+I'm using a method that is not as reliable.
 
 ## This script will only counter [BlockAdBlock.js][blockadblock] and is not a general purpose anti-anti-adblocker
 
