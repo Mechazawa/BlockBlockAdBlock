@@ -14,5 +14,5 @@ Also check out [FuckFuckAdBlock][FuckFuckAdBlock].
 [tracebusterbuster]: http://www.youtube.com/watch?v=Iw3G80bplTg
 [tampermonkey]: https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo
 [greasemonkey]: https://addons.mozilla.org/nl/firefox/addon/greasemonkey/
-[raw]: https://github.com/Mechazawa/BlockBlockAdBlock/raw/master/BlockBlockAdBlock.user.js
+[raw]: https://github.com/Mechazawa/BlockBlockAdBlock/raw/master/blockblockadblock.user.js
 [fuckfuckadblock]: https://github.com/Mechazawa/FuckFuckAdBlock
