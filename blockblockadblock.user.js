@@ -29,9 +29,6 @@
             var suspectKeys = Object.keys(suspect);
             var found = false;
 
-
-            suspects[suspectName] = suspect;
-
             for(var ii in suspectKeys) {
                 if(suspect[suspectKeys[ii]].toSource) {
                     var source = suspect[suspectKeys[ii]].toSource();
