@@ -4,7 +4,7 @@
 // @namespace   Mechazawa
 // @author      Mechazawa
 // @include     *
-// @version     3
+// @version     4
 // @license     Unlicense
 // @updateURL   https://github.com/Mechazawa/BlockBlockAdBlock/raw/master/BlockBlockAdBlock.user.js
 // @run-at      document-start
