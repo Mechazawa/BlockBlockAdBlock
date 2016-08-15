@@ -39,7 +39,7 @@
                     if (found) break;
                 }
             } else {
-                found = /\D\d\D/.exec(suspectName) !== null
+                found = /\D\d\D/.exec(suspectName) !== null;
             }
 
             if(found) {
