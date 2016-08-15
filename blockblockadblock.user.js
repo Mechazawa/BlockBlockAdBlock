@@ -16,6 +16,7 @@
 // I have a bunch more ways of detecting it in case this method ever gets blocked
 (function(window) {
     var windowKeysDefault = Object.keys(window);
+    var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 
     var pivot = 'Ly93d3cuZ29vZ2xlLmNvbS9hZHNlbnNlL3N0YXJ0L2ltYWdlcy9mYXZpY29uLmljbw==';
 
@@ -25,17 +26,20 @@
 
         for(var i = 0; i < windowKeysSuspect.length; i++) {
             var suspectName = windowKeysSuspect[i];
-            var suspect = window[suspectName];
-            var suspectKeys = Object.keys(suspect);
-            var found = false;
 
-            for(var ii in suspectKeys) {
-                if(suspect[suspectKeys[ii]].toSource) {
+            if(isFirefox) {
+                var suspect = window[suspectName];
+                var suspectKeys = Object.keys(suspect);
+                var found = false;
+
+                for (var ii in suspectKeys) {
                     var source = suspect[suspectKeys[ii]].toSource();
-                }
+                    found = source.indexOf(pivot) !== -1;
 
-                found = source.indexOf(pivot) !== -1;
-                if(found) break;
+                    if (found) break;
+                }
+            } else {
+                found = /\D\d\D/.exec(suspectName) !== null
             }
 
             if(found) {
