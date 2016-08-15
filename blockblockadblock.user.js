@@ -6,7 +6,7 @@
 // @include     *
 // @version     3
 // @license     Unlicense
-// @updateURL   https://github.com/Mechazawa/BlockBlockAdBlock/raw/master/blockblockadblock.user.js
+// @updateURL   https://github.com/Mechazawa/BlockBlockAdBlock/raw/master/BlockBlockAdBlock.user.js
 // @run-at      document-start
 // @grant       none
 // ==/UserScript==
