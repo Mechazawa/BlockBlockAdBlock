@@ -1,8 +1,11 @@
 BlockBlockAdBlock
 =================
 
-This simple userscript will block BlockBlockAdBlock from running. Just install it using [Tampermonkey][tampermonkey] (chrome) or [Greasemonkey][greasemonkey] (Firefox) by clicking 
-[here][raw]. You can try it out on [the BlockAdblock website][blockadblock].
+This simple userscript will block BlockBlockAdBlock from running. Just install it using [Tampermonkey][tampermonkey] 
+(chrome) or [Greasemonkey][greasemonkey] (Firefox) by clicking [here][raw]. You can try it out on 
+[the BlockAdblock website][blockadblock]. [It's kinda like a trace buster buster][tracebusterbuster].
+
+Also check out [FuckFuckAdBlock][FuckFuckAdBlock].
 
 ## This script will only counter [BlockAdBlock.js][blockadblock] and is not a general purpose anti-anti-adblocker
 
@@ -12,3 +15,4 @@ This simple userscript will block BlockBlockAdBlock from running. Just install i
 [tampermonkey]: https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo
 [greasemonkey]: https://addons.mozilla.org/nl/firefox/addon/greasemonkey/
 [raw]: https://github.com/Mechazawa/BlockBlockAdBlock/raw/master/BlockBlockAdBlock.user.js
+[fuckfuckadblock]: https://github.com/Mechazawa/FuckFuckAdBlock
