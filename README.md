@@ -1,7 +1,7 @@
 BlockBlockAdBlock
 =================
 
-This simple userscript will block BlockBlockAdBlock from running. Just install it using [Tampermonkey][tampermonkey] 
+This simple userscript will block BlockAdBlock from running. Just install it using [Tampermonkey][tampermonkey] 
 (chrome) or [Greasemonkey][greasemonkey] (Firefox) by clicking [here][raw]. You can try it out on 
 [the BlockAdblock website][blockadblock]. [It's kinda like a trace buster buster][tracebusterbuster].
 
